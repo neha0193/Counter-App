@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <div className={isDark ? "dark" : "" }>
-      <div className="bg-amber-400 dark:bg-primary-dark min-h-screen "> 
+      <div className="bg-white dark:bg-primary-dark min-h-screen "> 
         <h1 className=" dark:text-white text-4xl text-center pt-32 pb-10">
           Counter App
         </h1>
@@ -27,7 +27,7 @@ const App = () => {
           <button
             className="px-4 mx-2 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition duration-200"
             type="button"
-            onClick={() => setCount((prev) => prev + 1)}
+            onClick={() => setCount(prev => prev + 1)}
           >
             Increment
           </button>
@@ -35,14 +35,15 @@ const App = () => {
           <button
             className="px-4 mx-2 py-2 bg-indigo-600 text-white rounded hover:bg-indigo-700 transition duration-200"
             type="button"
-            onClick={() => setCount((prev) => prev - 1)}
+            onClick={() => setCount(prev => prev - 1)}
           >
             Decrement
           </button>
         </div>
+
         <div className="text-center">
-          <button type="button" onClick={() => setIsDark((prev) => !prev)}>
-            <FaLightbulb   className="dark:text-white text-5xl" />
+          <button type="button" onClick={() => setIsDark(prev => !prev)}>
+            <FaLightbulb className="dark:text-white text-5xl" />
           </button>
         </div>
       </div>
