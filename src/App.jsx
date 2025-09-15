@@ -3,7 +3,7 @@ import { FaLightbulb } from "react-icons/fa";
 
 const App = () => {
   const [count, setCount] = useState(0);
-  const [isDark, setIsDark] = useState(false);
+  const [isDark, setIsDark] = useState(true);
 
   return (
     <div className={isDark ? "dark" : ""}>
